@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chronicle Hotels - Brand Identity</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background: #F5F1E8;
+            color: #2C2416;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #2C2416 0%, #4A3F2E 100%);
+            color: #F5F1E8;
+            padding: 80px 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: repeating-linear-gradient(
+                90deg,
+                transparent,
+                transparent 2px,
+                rgba(245, 241, 232, 0.03) 2px,
+                rgba(245, 241, 232, 0.03) 4px
+            );
+        }
+
+        .logo-container {
+            position: relative;
+            z-index: 2;
+        }
+
+        .logo {
+            font-size: 48px;
+            font-weight: 300;
+            letter-spacing: 8px;
+            margin-bottom: 10px;
+            font-family: 'Palatino', 'Book Antiqua', serif;
+        }
+
+        .logo-mark {
+            display: inline-block;
+            width: 90px;
+            height: 90px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .logo-mark-line {
+            position: absolute;
+            width: 140px;
+            height: 2px;
+            background: #C9A961;
+            left: -25px;
+        }
+
+        .logo-mark-line:nth-child(1) { top: 15px; transform: rotate(45deg); }
+        .logo-mark-line:nth-child(2) { top: 27px; transform: rotate(45deg); }
+        .logo-mark-line:nth-child(3) { top: 39px; transform: rotate(45deg); }
+        .logo-mark-line:nth-child(4) { top: 51px; transform: rotate(45deg); }
+        .logo-mark-line:nth-child(5) { top: 63px; transform: rotate(45deg); }
+        .logo-mark-line:nth-child(6) { top: 75px; transform: rotate(45deg); }
+        .logo-mark-line:nth-child(7) { top: 15px; transform: rotate(-45deg); opacity: 0.5; }
+        .logo-mark-line:nth-child(8) { top: 27px; transform: rotate(-45deg); opacity: 0.5; }
+        .logo-mark-line:nth-child(9) { top: 39px; transform: rotate(-45deg); opacity: 0.5; }
+        .logo-mark-line:nth-child(10) { top: 51px; transform: rotate(-45deg); opacity: 0.5; }
+        .logo-mark-line:nth-child(11) { top: 63px; transform: rotate(-45deg); opacity: 0.5; }
+        .logo-mark-line:nth-child(12) { top: 75px; transform: rotate(-45deg); opacity: 0.5; }
+
+        .logo-mark-border {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border: 2px solid #C9A961;
+            border-radius: 50%;
+            left: 0;
+            top: 0;
+        }
+
+        .tagline {
+            font-size: 18px;
+            letter-spacing: 3px;
+            color: #C9A961;
+            font-weight: 300;
+            margin-top: 15px;
+        }
+
+        h2 {
+            font-size: 32px;
+            font-weight: 300;
+            letter-spacing: 4px;
+            margin: 60px 0 30px;
+            color: #2C2416;
+            text-align: center;
+            border-bottom: 1px solid #C9A961;
+            padding-bottom: 15px;
+        }
+
+        .logo-meaning {
+            background: white;
+            padding: 50px;
+            border-radius: 12px;
+            margin: 40px 0;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            border-left: 4px solid #C9A961;
+        }
+
+        .logo-meaning h3 {
+            font-size: 20px;
+            letter-spacing: 3px;
+            color: #2C2416;
+            margin-bottom: 20px;
+            font-family: 'Palatino', serif;
+        }
+
+        .logo-meaning p {
+            line-height: 1.8;
+            color: #4A3F2E;
+            margin-bottom: 15px;
+        }
+
+        .logo-meaning ul {
+            list-style: none;
+            margin: 20px 0;
+            padding-left: 20px;
+        }
+
+        .logo-meaning li {
+            margin: 10px 0;
+            padding-left: 20px;
+            position: relative;
+            line-height: 1.8;
+        }
+
+        .logo-meaning li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: #C9A961;
+            font-weight: bold;
+        }
+
+        .typography-section {
+            background: white;
+            padding: 50px;
+            border-radius: 12px;
+            margin: 40px 0;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+
+        .type-sample {
+            margin: 40px 0;
+            padding: 30px 0;
+            border-bottom: 1px solid #E8E1D3;
+        }
+
+        .type-sample:last-child {
+            border-bottom: none;
+        }
+
+        .type-label {
+            font-size: 12px;
+            letter-spacing: 2px;
+            color: #C9A961;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .heading-display {
+            font-family: 'Palatino', 'Book Antiqua', serif;
+            font-size: 48px;
+            font-weight: 300;
+            letter-spacing: 3px;
+            color: #2C2416;
+        }
+
+        .heading-section {
+            font-family: 'Palatino', 'Book Antiqua', serif;
+            font-size: 32px;
+            font-weight: 400;
+            letter-spacing: 2px;
+            color: #4A3F2E;
+        }
+
+        .body-text {
+            font-family: 'Georgia', serif;
+            font-size: 16px;
+            line-height: 1.8;
+            color: #2C2416;
+        }
+
+        .color-palette {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .color-swatch {
+            aspect-ratio: 1;
+            border-radius: 8px;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+            transition: transform 0.3s ease;
+        }
+
+        .color-swatch:hover {
+            transform: translateY(-5px);
+        }
+
+        .color-name {
+            font-weight: 600;
+            margin-bottom: 5px;
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+
+        .color-hex {
+            font-size: 12px;
+            opacity: 0.8;
+            font-family: monospace;
+        }
+
+        .elements-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .element-card {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+
+        .element-title {
+            font-size: 18px;
+            letter-spacing: 2px;
+            color: #2C2416;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .pattern-sample {
+            width: 100%;
+            height: 150px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .pattern-1 {
+            background: #F5F1E8;
+        }
+
+        .pattern-1::before,
+        .pattern-1::after {
+            content: '';
+            position: absolute;
+            width: 200%;
+            height: 2px;
+            background: #C9A961;
+            left: -50%;
+        }
+
+        .pattern-1::before {
+            top: 30px;
+            transform: rotate(45deg);
+            box-shadow: 0 15px 0 #C9A961, 0 30px 0 #C9A961, 0 45px 0 #C9A961, 0 60px 0 #C9A961;
+        }
+
+        .pattern-1::after {
+            top: 30px;
+            transform: rotate(-45deg);
+            opacity: 0.3;
+            box-shadow: 0 15px 0 #C9A961, 0 30px 0 #C9A961, 0 45px 0 #C9A961, 0 60px 0 #C9A961;
+        }
+
+        .pattern-2 {
+            background: 
+                radial-gradient(circle at 20% 50%, transparent 10px, #F5F1E8 10px, #F5F1E8 15px, transparent 15px),
+                radial-gradient(circle at 80% 50%, transparent 10px, #F5F1E8 10px, #F5F1E8 15px, transparent 15px);
+            background-color: #4A3F2E;
+            background-size: 100px 100px;
+        }
+
+        .pattern-3 {
+            background: linear-gradient(90deg, #C9A961 1px, transparent 1px),
+                        linear-gradient(#C9A961 1px, transparent 1px);
+            background-size: 30px 30px;
+            background-color: #F5F1E8;
+        }
+
+        .icon-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+
+        .icon-sample {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 10px;
+            border: 2px solid #2C2416;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            color: #2C2416;
+        }
+
+        .icon-label {
+            text-align: center;
+            font-size: 12px;
+            letter-spacing: 1px;
+            color: #4A3F2E;
+        }
+
+        .mockup {
+            background: white;
+            border-radius: 12px;
+            padding: 40px;
+            margin: 30px 0;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+        }
+
+        .room-key {
+            background: linear-gradient(135deg, #2C2416 0%, #4A3F2E 100%);
+            color: #F5F1E8;
+            padding: 30px;
+            border-radius: 8px;
+            max-width: 400px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .room-key::before {
+            content: '';
+            position: absolute;
+            width: 200px;
+            height: 2px;
+            background: rgba(201, 169, 97, 0.2);
+            top: 20px;
+            right: -50px;
+            transform: rotate(45deg);
+            box-shadow: 0 15px 0 rgba(201, 169, 97, 0.2), 0 30px 0 rgba(201, 169, 97, 0.2);
+        }
+
+        .room-number {
+            font-size: 48px;
+            letter-spacing: 8px;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #C9A961;
+            font-family: 'Palatino', serif;
+            position: relative;
+            z-index: 2;
+        }
+
+        .location-name {
+            text-align: center;
+            font-size: 14px;
+            letter-spacing: 3px;
+            opacity: 0.8;
+            position: relative;
+            z-index: 2;
+        }
+
+        .brand-principles {
+            background: #2C2416;
+            color: #F5F1E8;
+            padding: 60px 40px;
+            border-radius: 12px;
+            margin: 60px 0;
+        }
+
+        .principle {
+            margin: 30px 0;
+            padding-left: 30px;
+            border-left: 3px solid #C9A961;
+        }
+
+        .principle-title {
+            font-size: 20px;
+            letter-spacing: 2px;
+            color: #C9A961;
+            margin-bottom: 10px;
+        }
+
+        .principle-desc {
+            font-size: 16px;
+            line-height: 1.8;
+            opacity: 0.9;
+        }
+
+        /* UI Applications */
+        .ui-divider {
+            background: linear-gradient(135deg, #C9A961 0%, #4A3F2E 100%);
+            padding: 40px;
+            text-align: center;
+            margin: 80px 0 60px;
+            border-radius: 12px;
+        }
+
+        .ui-divider h2 {
+            color: #F5F1E8;
+            border: none;
+            margin: 0;
+        }
+
+        .mockup-label {
+            text-align: center;
+            font-size: 14px;
+            letter-spacing: 2px;
+            color: #C9A961;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+
+        .website-mockup {
+            background: #E8E1D3;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 12px 40px rgba(0,0,0,0.15);
+            margin: 40px 0;
+        }
+
+        .browser-chrome {
+            background: #4A3F2E;
+            padding: 12px 20px;
+            display: flex;
+            gap: 8px;
+        }
+
+        .browser-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #C9A961;
+        }
+
+        .website-header {
+            background: #2C2416;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .header-mark {
+            width: 35px;
+            height: 35px;
+            position: relative;
+        }
+
+        .small-mark-line {
+            position: absolute;
+            width: 50px;
+            height: 1.5px;
+            background: #C9A961;
+            left: -8px;
+        }
+
+        .small-mark-line:nth-child(1) { top: 6px; transform: rotate(45deg); }
+        .small-mark-line:nth-child(2) { top: 11px; transform: rotate(45deg); }
+        .small-mark-line:nth-child(3) { top: 16px; transform: rotate(45deg); }
+        .small-mark-line:nth-child(4) { top: 21px; transform: rotate(45deg); }
+        .small-mark-line:nth-child(5) { top: 26px; transform: rotate(45deg); }
+        .small-mark-line:nth-child(6) { top: 6px; transform: rotate(-45deg); opacity: 0.5; }
+        .small-mark-line:nth-child(7) { top: 11px; transform: rotate(-45deg); opacity: 0.5; }
+        .small-mark-line:nth-child(8) { top: 16px; transform: rotate(-45deg); opacity: 0.5; }
+        .small-mark-line:nth-child(9) { top: 21px; transform: rotate(-45deg); opacity: 0.5; }
+        .small-mark-line:nth-child(10) { top: 26px; transform: rotate(-45deg); opacity: 0.5; }
+
+        .small-mark-border {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border: 1.5px solid #C9A961;
+            border-radius: 50%;
+        }
+
+        .header-text {
+            color: #F5F1E8;
+            font-family: 'Palatino', serif;
+            font-size: 18px;
+            letter-spacing: 4px;
+            font-weight: 300;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 25px;
+        }
+
+        .nav-item {
+            color: #F5F1E8;
+            font-size: 12px;
+            letter-spacing: 2px;
+        }
+
+        .website-hero {
+            background: linear-gradient(rgba(44, 36, 22, 0.5), rgba(44, 36, 22, 0.7)), 
+                        linear-gradient(135deg, #4A3F2E 0%, #2C2416 100%);
+            padding: 70px 40px;
+            text-align: center;
+            color: #F5F1E8;
+        }
+
+        .hero-headline {
+            font-family: 'Palatino', serif;
+            font-size: 42px;
+            font-weight: 300;
+            letter-spacing: 5px;
+            margin-bottom: 15px;
+        }
+
+        .hero-subtext {
+            font-size: 14px;
+            letter-spacing: 2px;
+            color: #C9A961;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 12px 35px;
+            background: transparent;
+            border: 2px solid #C9A961;
+            color: #C9A961;
+            font-size: 11px;
+            letter-spacing: 3px;
+        }
+
+        .website-content {
+            padding: 50px 40px;
+            background: #F5F1E8;
+        }
+
+        .destinations-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 25px;
+        }
+
+        .destination-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .destination-image {
+            height: 120px;
+            background: linear-gradient(135deg, #4A3F2E 0%, #2C2416 100%);
+        }
+
+        .destination-info {
+            padding: 18px;
+        }
+
+        .destination-title {
+            font-family: 'Palatino', serif;
+            font-size: 16px;
+            letter-spacing: 2px;
+            color: #2C2416;
+            margin-bottom: 6px;
+        }
+
+        .destination-desc {
+            font-size: 11px;
+            color: #4A3F2E;
+            line-height: 1.5;
+        }
+
+        .phone-frame {
+            background: #2C2416;
+            border-radius: 28px;
+            padding: 12px;
+            max-width: 280px;
+            margin: 0 auto;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+        }
+
+        .phone-screen {
+            background: #F5F1E8;
+            border-radius: 18px;
+            overflow: hidden;
+        }
+
+        .phone-header {
+            background: #2C2416;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .phone-title {
+            color: #F5F1E8;
+            font-size: 13px;
+            letter-spacing: 2px;
+            font-family: 'Palatino', serif;
+        }
+
+        .phone-content {
+            padding: 20px;
+            min-height: 350px;
+        }
+
+        .booking-card {
+            background: white;
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 12px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        }
+
+        .booking-label {
+            font-size: 9px;
+            letter-spacing: 2px;
+            color: #C9A961;
+            margin-bottom: 4px;
+            font-weight: 600;
+        }
+
+        .booking-value {
+            font-size: 14px;
+            color: #2C2416;
+            font-family: 'Palatino', serif;
+        }
+
+        .app-button {
+            width: 100%;
+            padding: 10px;
+            background: #2C2416;
+            color: #C9A961;
+            border: none;
+            border-radius: 5px;
+            font-size: 10px;
+            letter-spacing: 2px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="logo-container">
+            <div class="logo-mark">
+                <div class="logo-mark-line"></div>
+                <div class="logo-mark-line"></div>
+                <div class="logo-mark-line"></div>
+                <div class="logo-mark-line"></div>
+                <div class="logo-mark-line"></div>
+                <div class="logo-mark-line"></div>
+                <div class="logo-mark-line"></div>
+                <div class="logo-mark-line"></div>
+                <div class="logo-mark-line"></div>
+                <div class="logo-mark-line"></div>
+                <div class="logo-mark-line"></div>
+                <div class="logo-mark-line"></div>
+                <div class="logo-mark-border"></div>
+            </div>
+            <div class="logo">CHRONICLE</div>
+            <div class="tagline">HOTELS</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="logo-meaning">
+            <h3>THE WOVEN CHRONICLE MARK</h3>
+            <p>
+                The Chronicle Hotels logo mark is inspired by diagonal weave patterns found in traditional textiles across cultures worldwide. 
+                The crossed diagonal lines within a circular frame represent the intersection of stories, cultures, and craft traditions that define each Chronicle location.
+            </p>
+            <ul>
+                <li><strong>Diagonal Weaving:</strong> References authentic textile craftsmanship from indigenous traditions to contemporary artisan work</li>
+                <li><strong>Layered Depth:</strong> Primary and secondary lines create visual depth, suggesting the multiple layers of meaning in every story</li>
+                <li><strong>Circular Containment:</strong> The circle represents completeness, community, and the globe—Chronicle hotels as destinations that contain entire worlds</li>
+                <li><strong>Cultural Authenticity:</strong> Unlike generic luxury symbols, this mark directly connects to the hands-on craft traditions that inform Chronicle's design philosophy</li>
+            </ul>
+        </div>
+
+        <h2>BRAND ESSENCE</h2>
+        <div class="typography-section">
+            <p class="body-text" style="text-align: center; font-size: 18px; max-width: 800px; margin: 0 auto;">
+                Chronicle Hotels captures the living narrative of place. Each property is a curator of local stories, 
+                where authentic cultural heritage meets sophisticated hospitality. We don't just occupy buildings in cities—we 
+                chronicle the spirit, craft, and soul of destinations through immersive design and genuine connections.
+            </p>
+        </div>
+
+        <h2>COLOR PALETTE</h2>
+        <div class="color-palette">
+            <div class="color-swatch" style="background: #2C2416; color: #F5F1E8;">
+                <div class="color-name">INK BLACK</div>
+                <div class="color-hex">#2C2416</div>
+            </div>
+            <div class="color-swatch" style="background: #4A3F2E; color: #F5F1E8;">
+                <div class="color-name">EARTH BROWN</div>
+                <div class="color-hex">#4A3F2E</div>
+            </div>
+            <div class="color-swatch" style="background: #C9A961; color: #2C2416;">
+                <div class="color-name">CHRONICLE GOLD</div>
+                <div class="color-hex">#C9A961</div>
+            </div>
+            <div class="color-swatch" style="background: #F5F1E8; color: #2C2416;">
+                <div class="color-name">PARCHMENT</div>
+                <div class="color-hex">#F5F1E8</div>
+            </div>
+            <div class="color-swatch" style="background: #E8E1D3; color: #2C2416;">
+                <div class="color-name">SAND</div>
+                <div class="color-hex">#E8E1D3</div>
+            </div>
+        </div>
+
+        <h2>TYPOGRAPHY</h2>
+        <div class="typography-section">
+            <div class="type-sample">
+                <div class="type-label">PRIMARY TYPEFACE - DISPLAY</div>
+                <div class="heading-display">Palatino / Book Antiqua</div>
+                <p style="margin-top: 15px; color: #4A3F2E;">Used for logo, headers, and key messaging. Evokes timeless elegance and literary sophistication.</p>
+            </div>
+            <div class="type-sample">
+                <div class="type-label">SECONDARY TYPEFACE - HEADINGS</div>
+                <div class="heading-section">Chronicle Section Heading</div>
+                <p style="margin-top: 15px; color: #4A3F2E;">For subheaders and section breaks. Maintains readability with refined character.</p>
+            </div>
+            <div class="type-sample">
+                <div class="type-label">BODY TYPEFACE</div>
+                <div class="body-text">
+                    Georgia serif provides warmth and readability for extended reading. Each Chronicle location tells 
+                    its own story through carefully curated design elements, local artisan partnerships, and 
+                    immersive cultural programming that invites guests to become part of the narrative.
+                </div>
+            </div>
+        </div>
+
+        <h2>DESIGN PATTERNS & TEXTURES</h2>
+        <div class="elements-grid">
+            <div class="element-card">
+                <div class="element-title">DIAGONAL WEAVE</div>
+                <div class="pattern-sample pattern-1"></div>
+                <p style="font-size: 14px; color: #4A3F2E;">Primary pattern derived from logo mark. Use for backgrounds and textile applications</p>
+            </div>
+            <div class="element-card">
+                <div class="element-title">CULTURAL DOTS</div>
+                <div class="pattern-sample pattern-2"></div>
+                <p style="font-size: 14px; color: #4A3F2E;">Organic repetition inspired by indigenous art and natural motifs</p>
+            </div>
+            <div class="element-card">
+                <div class="element-title">NARRATIVE GRID</div>
+                <div class="pattern-sample pattern-3"></div>
+                <p style="font-size: 14px; color: #4A3F2E;">Structured framework representing stories organized with purpose</p>
+            </div>
+        </div>
+
+        <h2>ICONOGRAPHY</h2>
+        <div class="icon-grid">
+            <div>
+                <div class="icon-sample">📖</div>
+                <div class="icon-label">STORIES</div>
+            </div>
+            <div>
+                <div class="icon-sample">🏺</div>
+                <div class="icon-label">CRAFT</div>
+            </div>
+            <div>
+                <div class="icon-sample">🗺️</div>
+                <div class="icon-label">PLACE</div>
+            </div>
+            <div>
+                <div class="icon-sample">🎨</div>
+                <div class="icon-label">ART</div>
+            </div>
+            <div>
+                <div class="icon-sample">🌿</div>
+                <div class="icon-label">NATURE</div>
+            </div>
+            <div>
+                <div class="icon-sample">👥</div>
+                <div class="icon-label">COMMUNITY</div>
+            </div>
+        </div>
+
+        <h2>BRAND APPLICATION</h2>
+        <div class="mockup">
+            <div class="room-key">
+                <div class="room-number">305</div>
+                <div class="location-name">CHRONICLE KYOTO</div>
+                <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid rgba(201, 169, 97, 0.3); text-align: center; font-size: 12px; letter-spacing: 2px;">
+                    YOUR STORY BEGINS HERE
+                </div>
+            </div>
+            <p style="text-align: center; margin-top: 30px; color: #4A3F2E; font-style: italic;">
+                Room key card design featuring woven pattern integration and location-specific branding
+            </p>
+        </div>
+
+        <h2>BRAND PRINCIPLES</h2>
+        <div class="brand-principles">
+            <div class="principle">
+                <div class="principle-title">AUTHENTIC CURATION</div>
+                <div class="principle-desc">
+                    Every Chronicle property features genuine local artisans, materials, and stories. No generic reproductions—only original works and meaningful collaborations.
+                </div>
+            </div>
+
+            <div class="principle">
+                <div class="principle-title">NARRATIVE DEPTH</div>
+                <div class="principle-desc">
+                    Design elements aren't decorative—they're storytelling devices. Each piece has provenance, each space has context, each detail invites discovery.
+                </div>
+            </div>
+
+            <div class="principle">
+                <div class="principle-title">COMMUNITY INTEGRATION</div>
+                <div class="principle-desc">
+                    Locals are collaborators, not subjects. Chronicle spaces serve as cultural hubs where travelers and residents connect over shared experiences.
+                </div>
+            </div>
+
+            <div class="principle">
+                <div class="principle-title">SOPHISTICATED SIMPLICITY</div>
+                <div class="principle-desc">
+                    Refined without being precious. Elegant without ostentation. Every element serves both aesthetic and functional purpose.
+                </div>
+            </div>
+
+            <div class="principle">
+                <div class="principle-title">EVOLVING TRADITION</div>
+                <div class="principle-desc">
+                    Respect heritage while embracing contemporary expression. Traditional crafts meet modern sustainability. Ancient wisdom informs future-forward hospitality.
+                </div>
+            </div>
+        </div>
+
+        <div class="ui-divider">
+            <h2>UI COMPONENTS & DIGITAL APPLICATIONS</h2>
+            <p style="color: #F5F1E8; font-size: 14px; letter-spacing: 2px; margin-top: 15px;">Desktop & Mobile Interface Design</p>
+        </div>
+
+        <div class="mockup-label">DESKTOP WEBSITE EXPERIENCE</div>
+        <div class="website-mockup">
+            <div class="browser-chrome">
+                <div class="browser-dot"></div>
+                <div class="browser-dot"></div>
+                <div class="browser-dot"></div>
+            </div>
+            <div class="website-header">
+                <div class="header-logo">
+                    <div class="header-mark">
+                        <div class="small-mark-line"></div>
+                        <div class="small-mark-line"></div>
+                        <div class="small-mark-line"></div>
+                        <div class="small-mark-line"></div>
+                        <div class="small-mark-line"></div>
+                        <div class="small-mark-line"></div>
+                        <div class="small-mark-line"></div>
+                        <div class="small-mark-line"></div>
+                        <div class="small-mark-line"></div>
+                        <div class="small-mark-line"></div>
+                        <div class="small-mark-border"></div>
+                    </div>
+                    <div class="header-text">CHRONICLE</div>
+                </div>
+                <div class="nav-menu">
+                    <div class="nav-item">DESTINATIONS</div>
+                    <div class="nav-item">STORIES</div>
+                    <div class="nav-item">EXPERIENCES</div>
+                    <div class="nav-item">BOOK</div>
+                </div>
+            </div>
+            <div class="website-hero">
+                <div class="hero-headline">WHERE CULTURE<br>BECOMES COMFORT</div>
+                <div class="hero-subtext">Discover hotels that tell the story of their place</div>
+                <div class="cta-button">EXPLORE DESTINATIONS</div>
+            </div>
+            <div class="website-content">
+                <div class="destinations-grid">
+                    <div class="destination-card">
+                        <div class="destination-image"></div>
+                        <div class="destination-info">
+                            <div class="destination-title">Kyoto</div>
+                            <div class="destination-desc">Ancient craft meets modern comfort in our temple district sanctuary</div>
+                        </div>
+                    </div>
+                    <div class="destination-card">
+                        <div class="destination-image"></div>
+                        <div class="destination-info">
+                            <div class="destination-title">Marrakech</div>
+                            <div class="destination-desc">Immerse yourself in the artisan traditions of the medina</div>
+                        </div>
+                    </div>
+                    <div class="destination-card">
+                        <div class="destination-image"></div>
+                        <div class="destination-info">
+                            <div class="destination-title">Oaxaca</div>
+                            <div class="destination-desc">Indigenous heritage woven into every corner of your stay</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="margin: 60px 0;">
+            <div class="mockup-label">MOBILE APPLICATION INTERFACE</div>
+            <div style="display: flex; justify-content: center; gap: 40px; flex-wrap: wrap;">
+                <div class="phone-frame">
+                    <div class="phone-screen">
+                        <div class="phone-header">
+                            <div class="header-mark" style="width: 28px; height: 28px;">
+                                <div class="small-mark-line"></div>
+                                <div class="small-mark-line"></div>
+                                <div class="small-mark-line"></div>
+                                <div class="small-mark-line"></div>
+                                <div class="small-mark-line"></div>
+                                <div class="small-mark-line"></div>
+                                <div class="small-mark-line"></div>
+                                <div class="small-mark-line"></div>
+                                <div class="small-mark-line"></div>
+                                <div class="small-mark-line"></div>
+                                <div class="small-mark-border"></div>
+                            </div>
+                            <div class="phone-title">CHRONICLE</div>
+                            <div style="color: #C9A961; font-size: 18px;">☰</div>
+                        </div>
+                        <div class="phone-content">
+                            <div class="booking-card">
+                                <div class="booking-label">UPCOMING STAY</div>
+                                <div class="booking-value">Chronicle Kyoto</div>
+                                <div style="margin-top: 8px; font-size: 12px; color: #4A3F2E;">December 15-18, 2025</div>
+                            </div>
+                            <div class="booking-card">
+                                <div class="booking-label">YOUR ROOM</div>
+                                <div class="booking-value">305 — Garden View</div>
+                            </div>
+                            <div class="app-button">CHECK-IN ONLINE</div>
+                            <div class="app-button" style="background: transparent; border: 2px solid #2C2416; color: #2C2416;">EXPLORE EXPERIENCES</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="phone-frame">
+                    <div class="phone-screen">
+                        <div class="phone-header">
+                            <div style="color: #C9A961; font-size: 18px;">←</div>
+                            <div class="phone-title">EXPERIENCES</div>
+                            <div style="color: #C9A961; font-size: 18px;">♥</div>
+                        </div>
+                        <div class="phone-content">
+                            <div class="booking-card">
+                                <div class="booking-label">TODAY • 10:00 AM</div>
+                                <div class="booking-value">Tea Ceremony</div>
+                                <div style="margin-top: 8px; font-size: 12px; color: #4A3F2E;">Traditional Japanese tea with master artisan</div>
+                            </div>
+                            <div class="booking-card">
+                                <div class="booking-label">TODAY • 3:00 PM</div>
+                                <div class="booking-value">Textile Workshop</div>
+                                <div style="margin-top: 8px; font-size: 12px; color: #4A3F2E;">Learn indigo dyeing techniques</div>
+                            </div>
+                            <div class="booking-card">
+                                <div class="booking-label">TOMORROW • 9:00 AM</div>
+                                <div class="booking-value">Market Walk</div>
+                                <div style="margin-top: 8px; font-size: 12px; color: #4A3F2E;">Guided tour of local artisan market</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p style="text-align: center; margin-top: 30px; color: #4A3F2E; font-style: italic;">
+                Mobile app showcasing booking management and curated local experiences
+            </p>
+        </div>
+
+        <div style="text-align: center; padding: 60px 20px; background: #F5F1E8; margin: 60px -20px -20px; border-top: 1px solid #C9A961;">
+            <div style="font-size: 24px; letter-spacing: 6px; color: #2C2416; font-family: 'Palatino', serif;">CHRONICLE HOTELS</div>
+            <div style="margin-top: 15px; font-size: 14px; letter-spacing: 3px; color: #4A3F2E;">WHERE EVERY STAY TELLS A STORY</div>
+        </div>
+    </div>
+</body>
+</html>

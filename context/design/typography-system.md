@@ -85,6 +85,40 @@
 **Display Medium**: 32px (2rem) / 36px (2.25rem) line height
 **Heading 1**: 28px (1.75rem) / 32px (2rem) line height
 
+## Brand-Specific Typography Adaptations
+
+### Chronicle Hotels Typography System
+When serving Chronicle Hotels properties, the platform adapts typography to reflect their sophisticated, culturally-rich brand identity:
+
+**Primary Display Typography**
+- **Font Family**: Palatino, "Book Antiqua", serif
+- **Character**: Literary sophistication, timeless elegance, cultural gravitas
+- **Usage**: Property names, cultural experience titles, artisan descriptions
+- **Letter Spacing**: 3-8px for headers reflecting premium positioning
+
+**Secondary Headings**
+- **Font Family**: Palatino, "Book Antiqua", serif
+- **Weight**: 400 (Regular) with refined letter spacing (2-4px)
+- **Usage**: Section headers, cultural program categories, narrative content
+
+**Body Text for Cultural Content**
+- **Font Family**: Georgia, serif
+- **Character**: Warm, readable serif for narrative and cultural descriptions
+- **Usage**: Experience descriptions, artisan stories, cultural context
+
+**Interface Elements**
+- **Maintain accessibility** with Inter for functional elements
+- **Blend serif elegance** with operational clarity
+- **Cultural hierarchy** through sophisticated typographic treatment
+
+### Standard Hospitality Brand Typography
+For corporate hospitality brands, maintain professional clarity:
+
+**Primary Display**
+- **Font Family**: Inter, Helvetica Neue, sans-serif
+- **Character**: Professional, trustworthy, efficient
+- **Usage**: Operational interfaces, booking systems, corporate communications
+
 ## User Preference Typography
 
 ### Font Size Scaling
@@ -97,6 +131,7 @@
 - **Comfortable**: Standard line height (1.5x)
 - **Compact**: Reduced line height (1.4x) for information density
 - **Spacious**: Increased line height (1.6x) for easier reading
+- **Cultural**: Enhanced line height (1.6x) and generous white space for contemplative reading
 
 ### Dyslexia-Friendly Options
 - Alternative font: OpenDyslexic (optional)

@@ -1,35 +1,46 @@
-# Taskii Design System
+# Design System Overview
 
-## Overview
+*A comprehensive design framework for hospitality excellence*
 
-The Taskii design system is built around the core principle of **intelligent hospitality operations**—creating clarity from complexity for hotel and travel operations teams. Our design language reflects the sophisticated intelligence of the platform while maintaining the simplicity needed for frontline staff working in fast-paced environments.
+---
 
-## Design Principles
+## Core Principles
 
-### 1. Hospitality-First
-- **Service Excellence**: Every interface element should facilitate exceptional guest service
-- **Operational Clarity**: Complex operational data presented with clear hierarchy and actionable insights
-- **Brand Consistency**: Maintain hotel brand identity while ensuring platform usability
+### 1. Hospitality-First Design
+Every design decision starts with the question: "Does this make the guest experience better?" We prioritize functionality that enhances service delivery, reduces friction, and enables staff to provide exceptional care.
 
 ### 2. Intelligence Made Simple
-- **Automated Sophistication**: Advanced AI-driven features feel intuitive, not overwhelming
-- **Contextual Guidance**: Just-in-time training and information at the point of need
-- **Progressive Disclosure**: Show essential information first, deeper details on demand
+Complex technology should feel effortless. Our interfaces hide sophisticated orchestration behind intuitive interactions. Users should feel empowered, not overwhelmed, by the system's capabilities.
 
 ### 3. Mobile-First Reality
-- **Thumb-Friendly**: All interactions optimized for mobile use in operational environments
-- **Offline Resilience**: Critical functions work without internet connectivity
-- **Glove Compatibility**: Interfaces work with cleaning gloves and protective equipment
+Hospitality happens everywhere—front desk, housekeeping carts, guest rooms, restaurants. Our design system assumes mobile-first usage with seamless transitions between devices and contexts.
 
 ### 4. Multi-Property Scale
-- **Consistent Experience**: Same interface patterns across all properties and roles
-- **Contextual Adaptation**: Subtle variations for different property types and markets
-- **Portfolio Intelligence**: Clear visual hierarchy from property-level to portfolio-level views
+Solutions must work for a single boutique hotel and a global chain. Our components and patterns scale gracefully while maintaining local personality and operational flexibility.
 
 ### 5. Personalized Experience
-- **User Preferences**: Customizable interfaces that adapt to individual work patterns
-- **Notification Intelligence**: Smart notification delivery based on personal preferences and context
-- **Adaptive Learning**: System learns from user behavior to optimize experience
+Every interaction is an opportunity to demonstrate that we know and care about individual preferences. Our design enables mass personalization without sacrificing efficiency or authenticity.
+
+---
+
+## Brand Integration Support
+
+### Chronicle Hotels Brand Alignment
+Our design system supports premium boutique hotel brands like Chronicle Hotels with:
+
+- **Cultural Authenticity**: Design components that can showcase local artisans, stories, and heritage
+- **Narrative-Driven UX**: Interfaces that tell the story of place through thoughtful content hierarchy
+- **Sophisticated Simplicity**: Refined aesthetic choices that feel elegant without ostentation
+- **Community Integration**: Features that connect guests with local experiences and artisan partnerships
+- **Evolving Tradition**: Modern functionality that respects and enhances cultural heritage
+
+### Visual Identity Flexibility
+The system accommodates diverse brand expressions:
+- Customizable color palettes for brand-specific theming
+- Typography hierarchies that support various brand personalities
+- Pattern and texture integration for unique brand storytelling
+- Iconography systems that reflect cultural context
+- Layout frameworks that maintain consistency while allowing brand distinction
 
 ## Target Users
 

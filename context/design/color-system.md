@@ -122,22 +122,46 @@
 - Stronger border definitions
 - Optimized for: Visual accessibility needs
 
-## Property Type Variations
+## Brand-Specific Color Integration
+
+### Chronicle Hotels Brand Colors
+For premium boutique brands like Chronicle Hotels, the platform adapts to sophisticated, culturally-rich aesthetics:
+
+**Primary Brand Colors**
+- `#2C2416` (Ink Black) - Headers, navigation, primary text
+- `#4A3F2E` (Earth Brown) - Supporting text, secondary elements  
+- `#C9A961` (Chronicle Gold) - CTA buttons, highlights, premium indicators
+- `#F5F1E8` (Parchment) - Main backgrounds, card surfaces
+- `#E8E1D3` (Sand) - Subtle backgrounds, dividers, patterns
+
+**Functional Integration**
+- Task Priority: Overlay Chronicle earth tones with clear priority indicators
+- Notifications: Blend brand aesthetics with communication hierarchy
+- Interactive Elements: Chronicle Gold for primary actions while maintaining usability
+- Status Indicators: Cultural colors balanced with universal meaning (red=urgent, green=complete)
+
+### Property Type Variations
 
 ### Luxury Properties
-- Enhanced gold accents: `#D4AF37` (Luxury Gold)
+- Enhanced gold accents: `#D4AF37` (Luxury Gold) or brand-specific accent
 - Richer secondary palette with deeper blues and elegant grays
-- Premium material indicators
+- Premium material indicators that respect brand heritage
 
 ### Budget/Economy Properties
 - Simplified palette focusing on primary blue and functional colors
 - Higher contrast ratios for accessibility
-- Clear, functional design emphasis
+- Clear, functional design emphasis with optional brand overlay
 
 ### Resort Properties
 - Warmer accent colors: `#06B6D4` (Tropical Teal) as secondary accent
 - Beach/vacation-inspired secondary palette
 - Relaxed, vacation-friendly color temperatures
+
+### Boutique/Artisan Properties (Chronicle Hotels Model)
+- Cultural color palettes that reflect local heritage
+- Sophisticated neutral bases with meaningful accent colors
+- Handcraft-inspired textures and patterns via color gradients
+- Story-driven color choices that connect to place and community
 
 ## Accessibility Standards
 
