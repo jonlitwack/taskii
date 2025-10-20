@@ -22,12 +22,14 @@ The deployment, security, and scalability architecture for the platform.
 - SQLite database for rapid prototyping
 - Local CopilotKit runtime
 - Single-instance SSE server
+- Browser-based push notifications (local)
 
 ### Production Environment
 - PostgreSQL cluster with read replicas
 - Load-balanced Next.js application servers
 - Redis for SSE connection management
 - Kubernetes orchestration for multi-tenant isolation
+- Email SMTP service for notifications
 
 ## Security Considerations
 

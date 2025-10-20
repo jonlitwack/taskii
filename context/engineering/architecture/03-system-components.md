@@ -41,5 +41,31 @@ The core system components that implement the intelligent task orchestration pla
   - Certification tracking
 
 ### 4. Real-Time Notification System
-- **Purpose**: Persistent banner system for critical alerts
+- **Purpose**: Multi-channel notification delivery with user preferences
 - **Implementation**: SSE-based with priority queuing and dismissible notifications
+- **Channels**: In-app notifications, email fallback, push notifications
+- **Features**:
+  - In-app notification center with unread indicators
+  - User-configurable preferences per channel
+  - Quiet hours and do-not-disturb settings
+  - Task mention alerts (@username in comments)
+  - Notification grouping by priority
+
+### 5. Analytics & Intelligence Module
+- **Purpose**: Basic task completion analytics and workload visibility
+- **Capabilities**:
+  - Task completion metrics (on-time vs delayed)
+  - Property-level and task-type analytics
+  - Staff workload visibility (tasks per staff member)
+  - Simple reporting dashboards
+
+### 6. User Preferences Engine
+- **Purpose**: Manage personalized user settings and preferences
+- **Features**:
+  - Notification channel preferences (email, push, in-app)
+  - Notification frequency settings (instant, digest, custom schedule)
+  - Task view preferences (list, kanban, calendar)
+  - Language and timezone settings
+  - Theme preferences (light/dark mode)
+  - Default task filters and saved views
+  - Preference synchronization across devices
