@@ -80,6 +80,7 @@ This is a proof-of-concept MVP with the following simplified implementations:
 C4Context
     title System Context Diagram for Taskii - Intelligent Task Orchestration Platform
 
+    Person(guest, "Hotel Guest", "Customer staying at property who provides feedback through reviews and interactions")
     Person(corporateAdmin, "Corporate Admin", "VP Operations/Brand Standards managing multiple properties")
     Person(propertyManager, "Property Manager", "Manager overseeing daily operations at hotel/resort location")
     Person(frontlineStaff, "Frontline Staff", "Hotel staff executing tasks (housekeeping, maintenance, guest services)")
@@ -91,6 +92,9 @@ C4Context
     System_Ext(sso, "SSO Provider", "Azure AD, Okta for authentication")
     System_Ext(emailService, "Email Service", "SMTP service for notifications")
     System_Ext(copilotkit, "CopilotKit Runtime", "AI service for intelligent task generation")
+    
+    Rel(guest, reviewPlatforms, "Writes reviews, submits complaints/feedback", "Web/Mobile")
+    Rel(guest, pms, "Makes bookings, checks in/out", "Web/Mobile/Kiosk")
     
     Rel(corporateAdmin, taskii, "Creates brand standards, views portfolio analytics", "HTTPS/Web")
     Rel(propertyManager, taskii, "Manages property tasks, assigns staff, tracks completion", "HTTPS/Web & Mobile")
@@ -106,11 +110,16 @@ C4Context
     Rel(emailService, corporateAdmin, "Sends digest emails", "Email")
     Rel(emailService, propertyManager, "Sends task notifications", "Email")
     Rel(emailService, frontlineStaff, "Sends task assignments", "Email")
+    
+    Rel(frontlineStaff, guest, "Delivers service, addresses needs", "In-person")
 
     UpdateElementStyle(taskii, $fontColor="white", $bgColor="#1168bd", $borderColor="#0b4884")
+    UpdateRelStyle(guest, reviewPlatforms, $textColor="purple", $lineColor="purple")
+    UpdateRelStyle(guest, pms, $textColor="purple", $lineColor="purple")
     UpdateRelStyle(corporateAdmin, taskii, $textColor="blue", $lineColor="blue")
     UpdateRelStyle(propertyManager, taskii, $textColor="green", $lineColor="green")
     UpdateRelStyle(frontlineStaff, taskii, $textColor="orange", $lineColor="orange")
+    UpdateRelStyle(frontlineStaff, guest, $textColor="red", $lineColor="red")
 ```
 
 ### Diagram Key
@@ -119,6 +128,7 @@ C4Context
 - **Taskii Platform**: Core intelligent task orchestration system
 
 **External Personas**
+- **Hotel Guest**: End customer whose feedback drives task generation and whose experience is improved through better service
 - **Corporate Admin**: Sets brand standards, monitors portfolio performance
 - **Property Manager**: Day-to-day task management for their location(s)
 - **Frontline Staff**: Task execution, training consumption, completion verification
@@ -131,7 +141,9 @@ C4Context
 - **CopilotKit Runtime**: AI-powered task generation engine
 
 **Key Interactions**
+- **Guest Feedback Loop** (purple): Guests provide reviews/complaints → triggers tasks → staff delivers better service
 - Real-time task updates via SSE to all active user sessions
 - Automated task generation from guest feedback and operational signals
 - Multi-channel notifications (in-app, email, browser push)
 - Role-based access control across organizational hierarchy
+- Direct service delivery from staff to guests completes the feedback cycle
