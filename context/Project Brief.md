@@ -54,11 +54,26 @@ Intelligent task orchestration platform that automatically translates brand stan
 **Basic Intelligence**
 14. Task completion analytics (on-time vs delayed, by property, by task type)
 15. Staff workload visibility (tasks per staff member)
-16. Simple notification system (push notifications for new/overdue tasks)
+16. Real-time notification system with personal preferences
+    - Push notifications for new/overdue tasks
+    - In-app notification center with unread indicators
+    - Customizable notification preferences per user (email, push, SMS)
+    - Notification grouping and priority filtering
+    - Quiet hours and do-not-disturb settings
+    - Task mention alerts (@username in comments)
+
+**Personal Preferences & Settings**
+17. User preference dashboard
+    - Notification channel preferences (email, push, SMS)
+    - Notification frequency settings (instant, digest, custom schedule)
+    - Task view preferences (list, kanban, calendar)
+    - Language and timezone settings
+    - Theme preferences (light/dark mode)
+    - Default task filters and saved views
 
 **Essential Integrations**
 18. Single sign-on (SSO) authentication
-19. Email notifications as fallback to push notifications
+19. Multi-channel notifications (email, push, SMS) based on user preferences
 20. Export task completion reports (CSV/PDF)
 
 **Training Foundation**
@@ -105,9 +120,12 @@ Traditional systems track tasks. This platform generates them—automatically co
 
 - Mobile-first with offline capability (for staff in properties with spotty WiFi)
 - AI-powered task generation and pattern recognition
+- Real-time notification infrastructure with WebSocket/SSE support
+- Personalized user preference engine for notification delivery
 - API-first integration with existing hotel systems (PMS, booking engines, review platforms, staff scheduling)
 - Multi-language support for international properties
 - Enterprise-grade security and guest data privacy
+- User preference data synchronization across devices
 
 ### Go-to-Market
 
