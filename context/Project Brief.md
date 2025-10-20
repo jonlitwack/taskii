@@ -55,7 +55,6 @@ Intelligent task orchestration platform that automatically translates brand stan
 14. Task completion analytics (on-time vs delayed, by property, by task type)
 15. Staff workload visibility (tasks per staff member)
 16. Simple notification system (push notifications for new/overdue tasks)
-17. **Real-time notification banner** - Persistent banner system displaying critical alerts, urgent tasks, and operational updates across all user interfaces with priority-based styling and dismissible/actionable notifications
 
 **Essential Integrations**
 18. Single sign-on (SSO) authentication
