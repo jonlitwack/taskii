@@ -1,6 +1,20 @@
 # Smarter Hotel & Travel Operations
 
-**Most operations software today doesn't account for the signals that actually drive hospitality performance—guest reviews, inspection scores, booking patterns, skill gaps. These signals sit in separate systems while managers manually figure out what tasks to create. We're building a system where operational reality automatically generates the right tasks for the right people, with the training to execute them.**
+## 1-Day POC Project
+
+**Project Type**: Proof of Concept Demo
+**Timeline**: 1 day
+**Team Size**: Small team (2-4 developers)
+**Deployment**: Local machine only - no cloud deployment
+**Demo Environment**: Run entirely from localhost
+
+---
+
+## POC Vision
+
+**Most operations software today doesn't account for the signals that actually drive hospitality performance—guest reviews, inspection scores, booking patterns, skill gaps. These signals sit in separate systems while managers manually figure out what tasks to create. We're building a proof-of-concept demo that shows how operational reality could automatically generate the right tasks for the right people, with the training to execute them.**
+
+This POC will demonstrate core concepts with simplified implementations running locally.
 
 ---
 
@@ -30,56 +44,82 @@ This isn't about doing more tasks. It's about ensuring that every brand standard
 
 Intelligent task orchestration platform that automatically translates brand standards, guest feedback, and operational signals into property-specific tasks—assigned to the right staff, at the right time, with embedded training to close skill gaps.
 
-### MVP Feature Set
+### POC Scope & Constraints
 
-**Core Task Management**
+**What We're Building (1-Day POC)**:
+- Simplified demo application running on localhost
+- Mock data and simulated integrations (no real external APIs)
+- Focus on demonstrating core concepts and user flows
+- SQLite or in-memory database
+- Simple web UI (React/Vue) + basic backend (Node.js/Python/Go)
+- Pre-populated demo data for 2-3 mock properties
+- Manual triggers to simulate automated task generation
+
+**What We're NOT Building**:
+- Cloud deployment or infrastructure
+- Real external integrations (PMS, review platforms, etc.)
+- Production-grade authentication/authorization
+- Mobile apps (web-only demo)
+- Real-time push notifications (can show in-app notifications)
+- Multi-tenant architecture
+- Scalability or performance optimization
+- Comprehensive error handling
+- Complete test coverage
+
+**Demo Scenario**:
+The POC will walk through a scripted demo showing:
+1. A guest review triggering a service recovery task
+2. Property manager assigning the task to staff
+3. Staff member completing the task with training material
+4. Dashboard showing task completion analytics
+5. Notification preferences being updated
+
+### MVP Feature Set (Scoped for 1-Day POC)
+
+**Core Task Management** (Priority 1 - Must Have)
 1. Manual task creation and assignment by property managers
 2. Task categorization by type (cleaning, maintenance, guest service, compliance)
 3. Task status tracking (pending, in progress, completed)
 4. Due dates and priority levels
-5. Mobile app for frontline staff to view and complete tasks
-6. Photo/note attachments for task completion verification
+5. ~~Mobile app~~ Simple web UI for frontline staff to view and complete tasks
+6. Text note attachments for task completion (photos optional/nice-to-have)
 
-**Multi-Property Management**
-7. Property selector/switcher for managers overseeing multiple locations
-8. Portfolio-level task overview dashboard
-9. Property-specific task templates
-10. Role-based permissions (corporate admin, property manager, frontline staff)
+**Multi-Property Management** (Priority 2 - Should Have)
+7. Property selector/switcher for managers overseeing 2-3 demo properties
+8. Simple task overview dashboard
+9. ~~Property-specific task templates~~ (out of scope for POC)
+10. Basic role simulation (admin, manager, staff) - hardcoded users, no real auth
 
-**Guest Feedback Integration**
-11. Manual or automated import of guest reviews from one platform (e.g., Google Reviews)
-12. Link specific reviews to generated tasks
-13. Service recovery task workflow (complaint → task → resolution → follow-up)
+**Guest Feedback Integration** (Priority 1 - Must Have for Demo)
+11. Mock guest reviews (hardcoded/seeded data)
+12. Button to "generate task from review" (simulated automation)
+13. Service recovery task workflow demo (complaint → task → resolution)
 
-**Basic Intelligence**
-14. Task completion analytics (on-time vs delayed, by property, by task type)
-15. Staff workload visibility (tasks per staff member)
-16. Real-time notification system with personal preferences
-    - Push notifications for new/overdue tasks
-    - In-app notification center with unread indicators
-    - Customizable notification preferences per user (email, push, SMS)
-    - Notification grouping and priority filtering
-    - Quiet hours and do-not-disturb settings
-    - Task mention alerts (@username in comments)
+**Basic Intelligence** (Priority 2 - Should Have)
+14. Simple task completion analytics (counts, percentages by status)
+15. Staff workload visibility (task count per staff member)
+16. ~~Real-time push notifications~~ In-app notification center (simulated)
+    - In-app notification list with unread indicators
+    - ~~Customizable notification preferences~~ Simple preference toggle for demo
+    - ~~Quiet hours~~ (out of scope)
+    - ~~Task mention alerts~~ (out of scope)
 
-**Personal Preferences & Settings**
-17. User preference dashboard
-    - Notification channel preferences (email, push, SMS)
-    - Notification frequency settings (instant, digest, custom schedule)
-    - Task view preferences (list, kanban, calendar)
-    - Language and timezone settings
-    - Theme preferences (light/dark mode)
-    - Default task filters and saved views
+**Personal Preferences & Settings** (Priority 3 - Nice to Have)
+17. Basic user preference page
+    - Notification on/off toggle
+    - ~~Task view preferences~~ Single view only (list or kanban)
+    - ~~Language and timezone~~ (out of scope)
+    - Theme toggle (light/dark mode) if time permits
 
-**Essential Integrations**
-18. Single sign-on (SSO) authentication
-19. Multi-channel notifications (email, push, SMS) based on user preferences
-20. Export task completion reports (CSV/PDF)
+**Essential Integrations** (Simplified for POC)
+18. ~~SSO authentication~~ Simple login form with hardcoded users
+19. ~~Multi-channel notifications~~ In-app only for demo
+20. ~~Export reports~~ (out of scope, or show mock CSV download if time)
 
-**Training Foundation**
-20. Attach training materials (documents, videos, links) to task types
-21. Required reading confirmation before task completion
-22. Track which staff have completed which training materials
+**Training Foundation** (Priority 2 - Should Have)
+21. Attach training material links to tasks
+22. "Mark as read" confirmation before task completion
+23. ~~Track training completion~~ Simple counter for demo
 
 ### Target Market
 Hotel and travel brands with 10+ properties (hotels, resorts, vacation rentals, travel services). Primary buyer: VP Operations/Brand Standards.
@@ -116,18 +156,59 @@ Traditional systems track tasks. This platform generates them—automatically co
 - 30-40% reduction in staff turnover through better training and clarity
 - Improved review scores and brand reputation
 
-### Technical Foundation
+### Technical Foundation (POC Implementation)
 
-- Mobile-first with offline capability (for staff in properties with spotty WiFi)
+**Simplified Stack for 1-Day POC**:
+- **Frontend**: React or Vue.js (simple SPA)
+- **Backend**: Node.js/Express, Python/FastAPI, or Go/Fiber (choose one)
+- **Database**: SQLite or in-memory data store
+- **State Management**: Local storage + simple backend API
+- **No Authentication**: Hardcoded user switching for role simulation
+- **No Real-time**: Polling or page refresh for updates
+- **Local Only**: Run with `npm start` or equivalent
+
+**Demo Data**:
+- 2-3 mock hotel properties
+- 5-10 pre-seeded tasks
+- 3-5 mock guest reviews
+- 4-6 hardcoded users (admin, 2 managers, 3 staff)
+
+**Full Production Vision** (for reference only):
+- Mobile-first with offline capability
 - AI-powered task generation and pattern recognition
 - Real-time notification infrastructure with WebSocket/SSE support
 - Personalized user preference engine for notification delivery
-- API-first integration with existing hotel systems (PMS, booking engines, review platforms, staff scheduling)
+- API-first integration with hotel systems (PMS, booking engines, review platforms)
 - Multi-language support for international properties
 - Enterprise-grade security and guest data privacy
 - User preference data synchronization across devices
 
-### Go-to-Market
+### POC Success Criteria
+
+**Demo Must Show**:
+1. ✅ Guest review → automated task generation flow
+2. ✅ Task assignment and status updates
+3. ✅ Staff completing task with training material
+4. ✅ Dashboard with basic analytics
+5. ✅ Notification system demonstration
+6. ✅ Multi-property switching
+
+**Technical Success**:
+- Runs on localhost without errors
+- Clean, functional UI (doesn't need to be beautiful)
+- Data persists during demo session
+- All core workflows complete without crashes
+
+**Timeline for 1-Day POC**:
+- **Hour 0-2**: Project setup, database schema, seed data
+- **Hour 2-4**: Backend API (CRUD operations for tasks, users, properties)
+- **Hour 4-6**: Frontend UI (task list, create/edit forms, dashboard)
+- **Hour 6-7**: Guest review → task generation demo flow
+- **Hour 7-8**: Testing, bug fixes, demo script preparation
+
+---
+
+### Go-to-Market (Future Vision)
 
 **Target Segments:**
 1. Boutique hotel groups (10-50 properties)

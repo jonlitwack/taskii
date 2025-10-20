@@ -346,35 +346,6 @@ This document analyzes travel app ideas from the meeting transcript, ranking the
 
 ---
 
-## Tier 4: Controversial or High-Risk Ideas
-
-### 14. Uber-Style Passenger Ratings
-**Score: 4.0** (Feasibility: 8, Value: 0)
-
-**Description**: Rate fellow passengers and view ratings when selecting seats to avoid problematic passengers.
-
-**Why Low/Negative Value**:
-- Serious discrimination and bias concerns
-- Legal and ethical issues
-- Brand reputation risk
-- Creates hostile environment
-
-**Why Technically Feasible**:
-- Rating systems technically simple
-- Seat map integration straightforward
-- User profile management exists
-
-**Risks** (Critical):
-- Discrimination lawsuits likely
-- Regulatory violations (civil rights, ADA, etc.)
-- Massive PR backlash potential
-- Creates toxic community culture
-- Could enable harassment and profiling
-- Children being rated (mentioned 13-year-old)
-
-**Recommendation**: **DO NOT PURSUE**
-
----
 
 ## Summary Recommendations
 
@@ -393,7 +364,6 @@ This document analyzes travel app ideas from the meeting transcript, ranking the
 8. Integrated Trip Platform with AI
 
 ### Deprioritize:
-- Passenger ratings (ethical/legal concerns)
 - International travel assistant (liability concerns unless very carefully scoped)
 
 ---
