@@ -73,3 +73,65 @@ This is a proof-of-concept MVP with the following simplified implementations:
 - Single PostgreSQL database for all data
 - No separate data warehouse or time-series database
 - Local development with SQLite
+
+## C4 System Context Diagram
+
+```mermaid
+C4Context
+    title System Context Diagram for Taskii - Intelligent Task Orchestration Platform
+
+    Person(corporateAdmin, "Corporate Admin", "VP Operations/Brand Standards managing multiple properties")
+    Person(propertyManager, "Property Manager", "Manager overseeing daily operations at hotel/resort location")
+    Person(frontlineStaff, "Frontline Staff", "Hotel staff executing tasks (housekeeping, maintenance, guest services)")
+    
+    System(taskii, "Taskii Platform", "Intelligent task orchestration system that generates, assigns, and tracks property-specific tasks with embedded training")
+    
+    System_Ext(reviewPlatforms, "Review Platforms", "Google Reviews, TripAdvisor, booking sites")
+    System_Ext(pms, "Property Management System", "Hotel PMS (reservations, check-ins, occupancy data)")
+    System_Ext(sso, "SSO Provider", "Azure AD, Okta for authentication")
+    System_Ext(emailService, "Email Service", "SMTP service for notifications")
+    System_Ext(copilotkit, "CopilotKit Runtime", "AI service for intelligent task generation")
+    
+    Rel(corporateAdmin, taskii, "Creates brand standards, views portfolio analytics", "HTTPS/Web")
+    Rel(propertyManager, taskii, "Manages property tasks, assigns staff, tracks completion", "HTTPS/Web & Mobile")
+    Rel(frontlineStaff, taskii, "Views assigned tasks, completes work, uploads photos", "Mobile App/PWA")
+    
+    Rel(taskii, reviewPlatforms, "Imports guest feedback", "REST API")
+    Rel(taskii, pms, "Retrieves occupancy patterns, booking data", "REST API/Integration")
+    Rel(taskii, sso, "Authenticates users", "OAuth/OIDC")
+    Rel(taskii, emailService, "Sends notification emails", "SMTP")
+    Rel(taskii, copilotkit, "Generates intelligent tasks from signals", "REST API/WebSocket")
+    
+    Rel(reviewPlatforms, taskii, "Webhook notifications for new reviews", "HTTPS")
+    Rel(emailService, corporateAdmin, "Sends digest emails", "Email")
+    Rel(emailService, propertyManager, "Sends task notifications", "Email")
+    Rel(emailService, frontlineStaff, "Sends task assignments", "Email")
+
+    UpdateElementStyle(taskii, $fontColor="white", $bgColor="#1168bd", $borderColor="#0b4884")
+    UpdateRelStyle(corporateAdmin, taskii, $textColor="blue", $lineColor="blue")
+    UpdateRelStyle(propertyManager, taskii, $textColor="green", $lineColor="green")
+    UpdateRelStyle(frontlineStaff, taskii, $textColor="orange", $lineColor="orange")
+```
+
+### Diagram Key
+
+**Internal System**
+- **Taskii Platform**: Core intelligent task orchestration system
+
+**External Personas**
+- **Corporate Admin**: Sets brand standards, monitors portfolio performance
+- **Property Manager**: Day-to-day task management for their location(s)
+- **Frontline Staff**: Task execution, training consumption, completion verification
+
+**External Systems**
+- **Review Platforms**: Source of guest feedback that triggers service recovery tasks
+- **Property Management System**: Source of operational data (occupancy, bookings)
+- **SSO Provider**: Enterprise authentication and user management
+- **Email Service**: Multi-channel notification delivery
+- **CopilotKit Runtime**: AI-powered task generation engine
+
+**Key Interactions**
+- Real-time task updates via SSE to all active user sessions
+- Automated task generation from guest feedback and operational signals
+- Multi-channel notifications (in-app, email, browser push)
+- Role-based access control across organizational hierarchy
