@@ -30,6 +30,42 @@ This isn't about doing more tasks. It's about ensuring that every brand standard
 
 Intelligent task orchestration platform that automatically translates brand standards, guest feedback, and operational signals into property-specific tasks—assigned to the right staff, at the right time, with embedded training to close skill gaps.
 
+### MVP Feature Set
+
+**Core Task Management**
+1. Manual task creation and assignment by property managers
+2. Task categorization by type (cleaning, maintenance, guest service, compliance)
+3. Task status tracking (pending, in progress, completed)
+4. Due dates and priority levels
+5. Mobile app for frontline staff to view and complete tasks
+6. Photo/note attachments for task completion verification
+
+**Multi-Property Management**
+7. Property selector/switcher for managers overseeing multiple locations
+8. Portfolio-level task overview dashboard
+9. Property-specific task templates
+10. Role-based permissions (corporate admin, property manager, frontline staff)
+
+**Guest Feedback Integration**
+11. Manual or automated import of guest reviews from one platform (e.g., Google Reviews)
+12. Link specific reviews to generated tasks
+13. Service recovery task workflow (complaint → task → resolution → follow-up)
+
+**Basic Intelligence**
+14. Task completion analytics (on-time vs delayed, by property, by task type)
+15. Staff workload visibility (tasks per staff member)
+16. Simple notification system (push notifications for new/overdue tasks)
+
+**Essential Integrations**
+17. Single sign-on (SSO) authentication
+18. Email notifications as fallback to push notifications
+19. Export task completion reports (CSV/PDF)
+
+**Training Foundation**
+20. Attach training materials (documents, videos, links) to task types
+21. Required reading confirmation before task completion
+22. Track which staff have completed which training materials
+
 ### Target Market
 Hotel and travel brands with 10+ properties (hotels, resorts, vacation rentals, travel services). Primary buyer: VP Operations/Brand Standards.
 
